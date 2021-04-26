@@ -2,4 +2,240 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.container {
+  max-width: 1370px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'Museo Sans 500';
+  src: local("Museo Sans 500"), local("Museo-Sans-500"), url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lifehack';
+  src: local("Lifehack Sans Bold"), local("Lifehack-Sans-Bold"), url("../fonts/LifehackSans-Bold.woff2") format("woff2"), url("../fonts/LifehackSans-Bold.woff") format("woff"), url("../fonts/LifehackSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans 300';
+  src: local("Museo Sans 300"), local("Museo-Sans-300"), url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Museo Sans 300', sans-serif;
+}
+
+.navbar {
+  background: #28385a;
+}
+
+.navbar-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-wrap a {
+  color: #b0b6c3;
+  text-decoration: none;
+  padding-right: 50px;
+}
+
+.navbar-wrap a:last-child {
+  padding-right: 0;
+}
+
+.navbar-wrap a:hover {
+  color: #af7326;
+  text-decoration: underline;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #304469;
+  min-height: 100px;
+}
+
+.logo-info {
+  font-size: 22px;
+  color: #c4cad4;
+  line-height: .4;
+  margin-left: -150px;
+}
+
+.city p {
+  font-size: 11px;
+  color: #7687a9;
+  text-align: left;
+}
+
+.city nav {
+  font-size: 22px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #c4cad4;
+  outline: none;
+  display: block;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.topmenu {
+  text-align: left;
+  padding: 10px 0;
+}
+
+.topmenu img {
+  margin-left: 16px;
+  margin-bottom: 3px;
+}
+
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+
+.topmenu > li:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 12px;
+  background: #ffff;
+  top: 16px;
+  -webkit-box-shadow: 4px -2px 0 #d2d2d2;
+          box-shadow: 4px -2px 0 #d2d2d2;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.topmenu > li:last-child:after {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.topmenu > li > a {
+  color: #bbc4d5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.topmenu li a:hover {
+  color: #af7326;
+  text-decoration: underline;
+}
+
+.submenu {
+  margin-top: 10px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 200px;
+  margin-left: -105px;
+  background: #ffff;
+  border: 1px solid #ededed;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.submenu li a {
+  padding: 10px 0;
+  margin: 0 10px;
+  border-bottom: 1px solid #efefef;
+  font-size: 16px;
+  color: #484848;
+}
+
+.topmenu > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.phone-icon {
+  width: 60px;
+  height: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../img/circle.png"), url("../img/phone.png") center no-repeat;
+  background-size: cover, auto;
+}
+
+.phone-num {
+  margin-left: -140px;
+  line-height: .4;
+}
+
+.phone-p1 {
+  text-indent: 7px;
+  font-size: 11px;
+  color: #7687a9;
+}
+
+.phone-p2 {
+  color: #c4cad4;
+}
+
+.phone-call {
+  width: 220px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("../img/phone-btn.png") center no-repeat;
+  background-size: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.phone-call a {
+  color: #c4cad4;
+  text-decoration: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
 /*# sourceMappingURL=style.css.map */

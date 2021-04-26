@@ -1,0 +1,133 @@
+.header-wrap
+    display: flex
+    justify-content: space-around
+    align-items: center
+    background: #304469
+    min-height: 100px
+
+.logo-info
+    font-size: 22px
+    color: #c4cad4
+    line-height: .4
+    margin-left: -150px
+
+.city p 
+    font-size: 11px
+    color: #7687a9
+    text-align: left
+
+.city nav
+    font-size: 22px
+
+nav ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+nav a
+    text-decoration: none
+    color: #c4cad4
+    outline: none
+    display: block
+    transition: .4s ease-in-out
+
+.topmenu
+    text-align: left
+    padding: 10px 0
+
+.topmenu img
+    margin-left: 16px
+    margin-bottom: 3px
+
+.topmenu > li
+    display: inline-block
+    position: relative
+
+.topmenu > li:after
+    content: ""
+    position: absolute
+    right: 0
+    width: 1px
+    height: 12px
+    background: #ffff
+    top: 16px
+    box-shadow: 4px -2px 0 #d2d2d2
+    transform: rotate(30deg)
+
+.topmenu > li:last-child:after
+    background: none
+    box-shadow: none
+
+.topmenu > li > a
+    color: #bbc4d5
+    text-transform: uppercase
+    letter-spacing: 1px
+
+.topmenu li a:hover
+    color: #af7326
+    text-decoration: underline
+
+.submenu
+    margin-top: 10px
+    position: absolute
+    left: 50%
+    top: 100%
+    width: 200px
+    margin-left: -105px
+    background: #ffff
+    border: 1px solid #ededed
+    z-index: 5
+    visibility: hidden
+    opacity: 0
+    transform: scale(.8)
+    transition: .4s ease-in-out
+
+.submenu li a 
+    padding: 10px 0
+    margin: 0 10px
+    border-bottom: 1px solid #efefef
+    font-size: 16px
+    color: #484848
+
+.topmenu > li:hover .submenu 
+    visibility: visible
+    opacity: 1
+    transform: scale(1)
+
+.phone-icon
+    width: 60px
+    height: 60px
+    justify-content: center
+    background: url("../img/circle.png"), url("../img/phone.png") center no-repeat
+    background-size: cover, auto
+
+.phone-num
+    margin-left: -140px
+    line-height: .4
+
+.phone-p1
+    text-indent: 7px
+    font-size: 11px
+    color: #7687a9
+
+.phone-p2
+    color: #c4cad4
+
+.phone-call
+    width: 220px
+    height: 60px
+    display: flex
+    background: url("../img/phone-btn.png") center no-repeat
+    background-size: cover
+    justify-content: center
+
+.phone-call a
+    color: #c4cad4
+    text-decoration: none
+    align-self: center
+
+
+
+
+
+
