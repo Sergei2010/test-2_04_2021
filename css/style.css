@@ -79,7 +79,7 @@ body {
 }
 
 .header-hero-wrap {
-  background: url("../img/header-hero-wrap-bg.png") no-repeat;
+  background: url("../img/header-hero-wrap/header-hero-wrap-bg.png") no-repeat;
   background-size: cover;
   background-position: 0  0;
 }
@@ -218,7 +218,7 @@ nav a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url("../img/circle.png"), url("../img/phone.png") center no-repeat;
+  background: url("../img/header/circle.png"), url("../img/header/phone.png") center no-repeat;
   background-size: cover, auto;
 }
 
@@ -244,7 +244,7 @@ nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url("../img/phone-btn.png") center no-repeat;
+  background: url("../img/header/phone-btn.png") center no-repeat;
   background-size: cover;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -381,5 +381,75 @@ nav a {
   font-family: 'Museo Sans 700', sans-serif;
   font-size: 20px;
   color: #2d2d2d;
+  margin-top: -10px;
+}
+
+.video {
+  height: 865px;
+  font-family: 'Museo Sans 500', sans-serif;
+  font-size: 21px;
+  color: #353535;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../img/video/video-bg.png") center no-repeat;
+  background-size: auto;
+}
+
+.video-wrap {
+  margin: 0 auto;
+}
+
+.video-wrap-cloud {
+  width: 940px;
+  height: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../img/video/video-cloud.png") no-repeat;
+  background-size: cover;
+  background-position: 0 -100%;
+}
+
+.video-cloud {
+  margin: auto;
+}
+
+.video-btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  text-align: left;
+}
+
+.video-btn a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.video-text div {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  border-bottom: 2px solid #eb8d07;
+  padding-bottom: 1px;
+  color: #eb8d07;
 }
 /*# sourceMappingURL=style.css.map */
