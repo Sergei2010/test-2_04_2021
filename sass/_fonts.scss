@@ -1,14 +1,4 @@
 @font-face {
-    font-family: 'Museo Sans 500';
-    src: local('Museo Sans 500'), local('Museo-Sans-500'),
-        url('../fonts/MuseoSansCyrl-500.woff2') format('woff2'),
-        url('../fonts/MuseoSansCyrl-500.woff') format('woff'),
-        url('../fonts/MuseoSansCyrl-500.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-@font-face {
 font-family: 'Lifehack';
 src: local('Lifehack Sans Bold'), local('Lifehack-Sans-Bold'),
     url('../fonts/LifehackSans-Bold.woff2') format('woff2'),
@@ -28,14 +18,39 @@ font-weight: normal;
 font-style: normal;
 }
 
+@font-face {
+    font-family: 'Museo Sans 500';
+    src: local('Museo Sans 500'), local('Museo-Sans-500'),
+        url('../fonts/MuseoSansCyrl-500.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-500.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans 700 Bold';
+    src: local('Museo Sans 700'), local('Museo-Sans-700'),
+    url('../fonts/MuseoSansCyrl-700.eot'),
+    url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSansCyrl-700.woff') format('woff'),
+    url('../fonts/MuseoSansCyrl-700.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
 @mixin bold {
     font-family: 'Lifehack', sans-serif;
+}
+
+@mixin light {
+    font-family: 'Museo Sans 300', sans-serif;
 }
 
 @mixin regular {
     font-family: 'Museo Sans 500', sans-serif;
 }
 
-@mixin light {
-    font-family: 'Museo Sans 300', sans-serif;
+@mixin semi-bold {
+    font-family: 'Museo Sans 700', sans-serif;
 }

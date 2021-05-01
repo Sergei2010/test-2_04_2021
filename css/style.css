@@ -9,13 +9,6 @@
 }
 
 @font-face {
-  font-family: 'Museo Sans 500';
-  src: local("Museo Sans 500"), local("Museo-Sans-500"), url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Lifehack';
   src: local("Lifehack Sans Bold"), local("Lifehack-Sans-Bold"), url("../fonts/LifehackSans-Bold.woff2") format("woff2"), url("../fonts/LifehackSans-Bold.woff") format("woff"), url("../fonts/LifehackSans-Bold.ttf") format("truetype");
   font-weight: 700;
@@ -29,8 +22,23 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Museo Sans 500';
+  src: local("Museo Sans 500"), local("Museo-Sans-500"), url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans 700 Bold';
+  src: local("Museo Sans 700"), local("Museo-Sans-700"), url("../fonts/MuseoSansCyrl-700.eot"), url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Museo Sans 300', sans-serif;
+  color: #c2cada;
 }
 
 .navbar {
@@ -52,6 +60,7 @@ body {
 
 .navbar-wrap a {
   color: #b0b6c3;
+  font-size: 18px;
   text-decoration: none;
   padding-right: 50px;
 }
@@ -69,6 +78,12 @@ body {
   transition: .4s ease-in-out;
 }
 
+.header-hero-wrap {
+  background: url("../img/header-hero-wrap-bg.png") no-repeat;
+  background-size: cover;
+  background-position: 0  0;
+}
+
 .header-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,7 +93,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #304469;
   min-height: 100px;
 }
 
@@ -86,7 +100,11 @@ body {
   font-size: 22px;
   color: #c4cad4;
   line-height: .4;
-  margin-left: -150px;
+  margin-left: 20px;
+}
+
+.city {
+  margin-left: 20px;
 }
 
 .city p {
@@ -196,6 +214,7 @@ nav a {
 .phone-icon {
   width: 60px;
   height: 60px;
+  margin-left: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -204,7 +223,7 @@ nav a {
 }
 
 .phone-num {
-  margin-left: -140px;
+  margin-left: 20px;
   line-height: .4;
 }
 
@@ -221,6 +240,7 @@ nav a {
 .phone-call {
   width: 220px;
   height: 60px;
+  margin-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,11 +251,135 @@ nav a {
           justify-content: center;
 }
 
+.phone-call:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
 .phone-call a {
   color: #c4cad4;
   text-decoration: none;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.hero-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 760px;
+}
+
+.hero-left {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.hero-list-down {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.hero-list-down:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.hero-right {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.hero-right h1 {
+  font-family: 'Lifehack', sans-serif;
+  font-size: 80px;
+  line-height: .1;
+}
+
+.hero-right h3 {
+  font-family: 'Museo Sans 500', sans-serif;
+  font-size: 30px;
+  line-height: .3;
+  margin-bottom: 50px;
+}
+
+.hero-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../img/hero/hero-btn.png") no-repeat center;
+  background-size: cover;
+  width: 359px;
+  height: 92px;
+}
+
+.hero-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.hero-btn a {
+  font-family: 'Museo Sans 500', sans-serif;
+  font-size: 22px;
+  color: #fffcf7;
+  text-decoration: none;
+}
+
+.indicators {
+  height: 250px;
+}
+
+.indicators-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.indicators-item {
+  margin-right: 116px;
+}
+
+.indicators-item:last-child {
+  margin-right: 0;
+}
+
+.indicators-size {
+  font-family: 'Lifehack', sans-serif;
+  font-size: 80px;
+  line-height: .1;
+  color: #73b4ed;
+}
+
+.indicators-name {
+  font-family: 'Museo Sans 700', sans-serif;
+  font-size: 20px;
+  color: #2d2d2d;
 }
 /*# sourceMappingURL=style.css.map */

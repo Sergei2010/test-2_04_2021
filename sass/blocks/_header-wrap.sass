@@ -2,14 +2,16 @@
     display: flex
     justify-content: space-around
     align-items: center
-    background: #304469
     min-height: 100px
 
 .logo-info
     font-size: 22px
     color: #c4cad4
     line-height: .4
-    margin-left: -150px
+    margin-left: 20px
+
+.city
+    margin-left: 20px    
 
 .city p 
     font-size: 11px
@@ -97,12 +99,13 @@ nav a
 .phone-icon
     width: 60px
     height: 60px
+    margin-left: 20px
     justify-content: center
     background: url("../img/circle.png"), url("../img/phone.png") center no-repeat
     background-size: cover, auto
 
 .phone-num
-    margin-left: -140px
+    margin-left: 20px
     line-height: .4
 
 .phone-p1
@@ -116,10 +119,15 @@ nav a
 .phone-call
     width: 220px
     height: 60px
+    margin-left: 20px
     display: flex
     background: url("../img/phone-btn.png") center no-repeat
     background-size: cover
     justify-content: center
+
+.phone-call:hover
+    transform: scale(1.05)
+    transition: .4s ease-in-out  
 
 .phone-call a
     color: #c4cad4
