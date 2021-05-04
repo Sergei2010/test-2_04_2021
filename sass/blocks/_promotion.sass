@@ -1,0 +1,103 @@
+.promotion
+    margin-top: 60px
+    .promotion-grid
+        display: grid
+        grid-template-areas: "header header header" "tel name btn" "footer footer footer" "... link ..."
+        grid-template-rows: 1fr 1fr 1fr 1fr
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 5px
+        align-items: center
+        height: 455px
+        justify-items: center
+        background: url("../img/promotion/promotion-bg.png") center no-repeat
+        background-size: cover
+        padding: 40px
+
+
+        &-header
+            grid-area: header
+
+        &-header > div
+            align-self: stretch
+            +regular
+            font-size: 20px
+            color: #3e3e3e
+
+        &-tel
+            grid-area: tel
+            width: 360px
+            height: 70px
+            background: url("../img/promotion/promotion-input-1.png") center no-repeat
+            background-size: cover
+            text-align: center
+            padding-top: 24px
+
+        &-tel > input
+            +regular
+            font-size: 18px
+            color: #9fa3a3
+            border: none
+
+        &-tel > input:hover
+            transform: scale(1.05)
+            transition: .4s ease-in-out  
+
+        &-name
+            grid-area: name
+            width: 360px
+            height: 70px
+            background: url("../img/promotion/promotion-input-1.png") center no-repeat
+            background-size: cover
+            text-align: center
+            padding-top: 24px
+
+        &-name > input
+            +regular
+            font-size: 18px
+            color: #9fa3a3
+            border: none
+
+        &-name > input:hover
+            transform: scale(1.05)
+            transition: .4s ease-in-out
+
+        &-btn
+            grid-area: btn
+            width: 360px
+            height: 70px
+            background: url("../img/promotion/promotion-btn.png") center no-repeat
+            background-size: cover
+            text-align: center
+            padding-top: 26px
+
+        &-btn a
+            +semi-bold
+            font-size: 18px
+            color: #cee4f9
+            text-decoration: none
+
+        &-btn:hover
+            transform: scale(1.05)
+            transition: .4s ease-in-out
+
+        &-footer
+            grid-area: footer
+
+        &-footer > div
+            border-top: 2px solid #fcb755
+            width: 50px
+            margin: 0 auto
+
+        &-footer > h4
+            +regular
+            font-size: 14px
+            color: #616161
+            text-align: center
+
+        &-link
+            grid-area: link
+       
+        &-link > div
+            width: 70px
+            height: 70px
+            margin-bottom: -105px

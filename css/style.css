@@ -6,6 +6,8 @@
 .container {
   max-width: 1370px;
   margin: 0 auto;
+  background: url("../img/container/container-bg.png") center no-repeat;
+  background-size: cover;
 }
 
 @font-face {
@@ -451,5 +453,154 @@ nav a {
   border-bottom: 2px solid #eb8d07;
   padding-bottom: 1px;
   color: #eb8d07;
+}
+
+.promotion {
+  margin-top: 60px;
+}
+
+.promotion .promotion-grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header header" "tel name btn" "footer footer footer" "... link ...";
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 455px;
+  justify-items: center;
+  background: url("../img/promotion/promotion-bg.png") center no-repeat;
+  background-size: cover;
+  padding: 40px;
+}
+
+.promotion .promotion-grid-header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+}
+
+.promotion .promotion-grid-header > div {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  font-family: 'Museo Sans 500', sans-serif;
+  font-size: 20px;
+  color: #3e3e3e;
+}
+
+.promotion .promotion-grid-tel {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: tel;
+  width: 360px;
+  height: 70px;
+  background: url("../img/promotion/promotion-input-1.png") center no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 24px;
+}
+
+.promotion .promotion-grid-tel > input {
+  font-family: 'Museo Sans 500', sans-serif;
+  font-size: 18px;
+  color: #9fa3a3;
+  border: none;
+}
+
+.promotion .promotion-grid-tel > input:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.promotion .promotion-grid-name {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: name;
+  width: 360px;
+  height: 70px;
+  background: url("../img/promotion/promotion-input-1.png") center no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 24px;
+}
+
+.promotion .promotion-grid-name > input {
+  font-family: 'Museo Sans 500', sans-serif;
+  font-size: 18px;
+  color: #9fa3a3;
+  border: none;
+}
+
+.promotion .promotion-grid-name > input:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.promotion .promotion-grid-btn {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: btn;
+  width: 360px;
+  height: 70px;
+  background: url("../img/promotion/promotion-btn.png") center no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 26px;
+}
+
+.promotion .promotion-grid-btn a {
+  font-family: 'Museo Sans 700', sans-serif;
+  font-size: 18px;
+  color: #cee4f9;
+  text-decoration: none;
+}
+
+.promotion .promotion-grid-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.promotion .promotion-grid-footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+}
+
+.promotion .promotion-grid-footer > div {
+  border-top: 2px solid #fcb755;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.promotion .promotion-grid-footer > h4 {
+  font-family: 'Museo Sans 500', sans-serif;
+  font-size: 14px;
+  color: #616161;
+  text-align: center;
+}
+
+.promotion .promotion-grid-link {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: link;
+}
+
+.promotion .promotion-grid-link > div {
+  width: 70px;
+  height: 70px;
+  margin-bottom: -105px;
 }
 /*# sourceMappingURL=style.css.map */
