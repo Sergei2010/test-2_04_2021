@@ -640,7 +640,7 @@ nav a {
   -ms-grid-column-span: 2;
   grid-area: header;
   font-family: 'Lifehack', sans-serif;
-  font-size: 36px;
+  font-size: 65px;
   color: #ffffff;
   margin-bottom: 30px;
 }
@@ -812,3 +812,4 @@ nav a {
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
 }
+/*# sourceMappingURL=style.css.map */
