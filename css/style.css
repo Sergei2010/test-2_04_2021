@@ -547,7 +547,7 @@ nav a {
 }
 
 .promotion .promotion-grid-btn {
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: btn;
@@ -682,7 +682,7 @@ nav a {
 }
 
 .choose-wrap .choose-grid-info {
-  -ms-grid-row: 3;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: info;
@@ -799,7 +799,7 @@ nav a {
 }
 
 .choose-wrap .choose-grid-btn {
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: btn;
@@ -811,5 +811,316 @@ nav a {
           transform: scale(1.05);
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
+}
+
+.innovation {
+  background: url("../img/innovation/innovation-bg.png") center no-repeat;
+  background-size: cover;
+}
+
+.innovation-wrap {
+  width: 1140px;
+  margin: 0 auto;
+  padding-top: 144px;
+}
+
+.innovation-wrap .innovation-grid {
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header" "info info" "btn btn";
+  -ms-grid-rows: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.innovation-wrap .innovation-grid-header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  font-family: 'Lifehack', sans-serif;
+  font-size: 65px;
+  margin-bottom: 60px;
+}
+
+.innovation-wrap .innovation-grid-header p:first-child {
+  margin: 0;
+  color: #fa9300;
+}
+
+.innovation-wrap .innovation-grid-header p {
+  color: #ffffff;
+  margin: 0;
+}
+
+.innovation-wrap .innovation-grid-info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: info;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.innovation-wrap .innovation-grid-info-left-text {
+  text-align: left;
+  margin-top: 25%;
+  color: #ffffff;
+}
+
+.innovation-wrap .innovation-grid-info-left-text p:first-child {
+  font-family: 'Lifehack', sans-serif;
+  font-size: 36px;
+  margin: 0;
+}
+
+.innovation-wrap .innovation-grid-info-left-text p:nth-child(2) {
+  font-family: 'Museo Sans 700', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.innovation-wrap .innovation-grid-info-left-text p {
+  font-family: 'Museo Sans 500', sans-serif;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.innovation-wrap .innovation-grid-info-left-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.innovation-wrap .innovation-grid-info-slider {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.innovation-wrap .innovation-grid-info-slider-main {
+  width: 557px;
+  height: 380px;
+  background: url("../img/innovation/innovation-slider-photo.png") center no-repeat, url("../img/innovation/innovation-slider-frame.png") center no-repeat;
+  background-size: 86% 86%, cover;
+}
+
+.innovation-wrap .innovation-grid-info-slider-left {
+  margin-right: -3%;
+  margin-top: 25%;
+}
+
+.innovation-wrap .innovation-grid-info-slider-right {
+  margin-left: -3%;
+  margin-top: 25%;
+}
+
+.innovation-wrap .innovation-grid-info-slider-right a img:hover,
+.innovation-wrap .innovation-grid-info-slider-left a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.innovation-wrap .innovation-grid-info-slider-bottom img {
+  vertical-align: middle;
+}
+
+.innovation-wrap .innovation-grid-info-slider-bottom a:nth-child(2n) img:hover {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.innovation-wrap .innovation-grid-info-slider-bottom a:nth-child(3) img:hover {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.innovation-wrap .innovation-grid-info-slider-bottom img:sec {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.innovation-wrap .innovation-grid-btn {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: btn;
+  margin-bottom: 120px;
+}
+
+.innovation-wrap .innovation-grid-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.individuality {
+  background: url("../img/individuality/individuality-bg.png") center no-repeat;
+  background-size: cover;
+}
+
+.individuality-wrap {
+  width: 1140px;
+  margin: 0 auto;
+  padding-top: 144px;
+}
+
+.individuality-wrap .individuality-grid {
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "info info";
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.individuality-wrap .individuality-grid-info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: info;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.individuality-wrap .individuality-grid-info-slider {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.individuality-wrap .individuality-grid-info-slider-main {
+  width: 600px;
+  height: 433px;
+  background: url("../img/individuality/individuality-slider-bg.png") center no-repeat;
+  background-size: cover;
+}
+
+.individuality-wrap .individuality-grid-info-slider-left {
+  margin-right: -3%;
+  margin-top: 25%;
+}
+
+.individuality-wrap .individuality-grid-info-slider-right {
+  margin-left: -3%;
+  margin-top: 25%;
+}
+
+.individuality-wrap .individuality-grid-info-slider-right a img:hover,
+.individuality-wrap .individuality-grid-info-slider-left a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.individuality-wrap .individuality-grid-info-slider-bottom {
+  margin-top: -45px;
+}
+
+.individuality-wrap .individuality-grid-info-slider-bottom img {
+  vertical-align: middle;
+}
+
+.individuality-wrap .individuality-grid-info-slider-bottom a:nth-child(2n) img:hover {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.individuality-wrap .individuality-grid-info-slider-bottom a:nth-child(3) img:hover {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.individuality-wrap .individuality-grid-info-slider-bottom img:sec {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.individuality-wrap .individuality-grid-info-right-text {
+  text-align: left;
+  margin-top: 25%;
+}
+
+.individuality-wrap .individuality-grid-info-right-text p:first-child {
+  font-family: 'Lifehack', sans-serif;
+  font-size: 36px;
+  margin: 0;
+  color: #7cbcf3;
+}
+
+.individuality-wrap .individuality-grid-info-right-text p:nth-child(2) {
+  font-family: 'Museo Sans 700', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  margin: 0;
+  color: #3e3e3e;
+}
+
+.individuality-wrap .individuality-grid-info-right-text p {
+  font-family: 'Museo Sans 500', sans-serif;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: #808080;
+}
+
+.individuality-wrap .individuality-grid-info-left-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
