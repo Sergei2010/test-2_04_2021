@@ -991,7 +991,7 @@ nav a {
 .individuality-wrap {
   width: 1140px;
   margin: 0 auto;
-  padding-top: 144px;
+  padding-top: 34px;
 }
 
 .individuality-wrap .individuality-grid {
@@ -1256,7 +1256,7 @@ nav a {
 .ideological-wrap {
   width: 1140px;
   margin: 0 auto;
-  padding-top: 144px;
+  padding-top: 34px;
 }
 
 .ideological-wrap .ideological-grid {
@@ -1378,5 +1378,138 @@ nav a {
   margin-top: 30px;
   margin-bottom: 0;
   color: #808080;
+}
+
+.practicality {
+  background: url("../img/practicality/practicality-bg.png") center no-repeat;
+  background-size: cover;
+}
+
+.practicality-wrap {
+  width: 1140px;
+  height: 810px;
+  margin: 0 auto;
+  padding-top: 144px;
+}
+
+.practicality-wrap .practicality-grid {
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "info info";
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.practicality-wrap .practicality-grid-info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: info;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.practicality-wrap .practicality-grid-info-left-text {
+  text-align: left;
+  margin-top: 25%;
+}
+
+.practicality-wrap .practicality-grid-info-left-text p:first-child {
+  font-family: 'Lifehack', sans-serif;
+  font-size: 36px;
+  margin: 0;
+  color: #7cbcf3;
+}
+
+.practicality-wrap .practicality-grid-info-left-text p:nth-child(2) {
+  font-family: 'Museo Sans 700', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  margin: 0;
+  color: #d2d7e0;
+}
+
+.practicality-wrap .practicality-grid-info-left-text p {
+  font-family: 'Museo Sans 500', sans-serif;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: #a8b2c5;
+}
+
+.practicality-wrap .practicality-grid-info-slider {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.practicality-wrap .practicality-grid-info-slider-main {
+  width: 600px;
+  height: 433px;
+  background: url("../img/practicality/practicality-slider-bg.png") center no-repeat;
+  background-size: cover;
+}
+
+.practicality-wrap .practicality-grid-info-slider-left {
+  margin-right: -5%;
+  margin-top: 25%;
+}
+
+.practicality-wrap .practicality-grid-info-slider-right {
+  margin-left: -9%;
+  margin-top: 25%;
+}
+
+.practicality-wrap .practicality-grid-info-slider-right a img:hover,
+.practicality-wrap .practicality-grid-info-slider-left a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.practicality-wrap .practicality-grid-info-slider-bottom {
+  margin-top: -75px;
+}
+
+.practicality-wrap .practicality-grid-info-slider-bottom img {
+  vertical-align: middle;
+}
+
+.practicality-wrap .practicality-grid-info-slider-bottom a:nth-child(2n) img:hover {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.practicality-wrap .practicality-grid-info-slider-bottom a:nth-child(3) img:hover {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.practicality-wrap .practicality-grid-info-slider-bottom img:sec {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */
