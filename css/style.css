@@ -1115,12 +1115,268 @@ nav a {
   color: #808080;
 }
 
-.individuality-wrap .individuality-grid-info-left-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.versatility {
+  background: url("../img/versatility/versatility-bg.png") center no-repeat;
+  background-size: cover;
+}
+
+.versatility-wrap {
+  width: 1140px;
+  height: 810px;
+  margin: 0 auto;
+  padding-top: 144px;
+}
+
+.versatility-wrap .versatility-grid {
+  margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "info info";
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.versatility-wrap .versatility-grid-info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: info;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.versatility-wrap .versatility-grid-info-left-text {
+  text-align: left;
+  margin-top: 25%;
+}
+
+.versatility-wrap .versatility-grid-info-left-text p:first-child {
+  font-family: 'Lifehack', sans-serif;
+  font-size: 36px;
+  margin: 0;
+  color: #7cbcf3;
+}
+
+.versatility-wrap .versatility-grid-info-left-text p:nth-child(2) {
+  font-family: 'Museo Sans 700', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  margin: 0;
+  color: #d2d7e0;
+}
+
+.versatility-wrap .versatility-grid-info-left-text p {
+  font-family: 'Museo Sans 500', sans-serif;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: #a8b2c5;
+}
+
+.versatility-wrap .versatility-grid-info-slider {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.versatility-wrap .versatility-grid-info-slider-main {
+  width: 600px;
+  height: 433px;
+  background: url("../img/versatility/versatility-slider-bg.png") center no-repeat;
+  background-size: cover;
+}
+
+.versatility-wrap .versatility-grid-info-slider-left {
+  margin-right: -3%;
+  margin-top: 25%;
+}
+
+.versatility-wrap .versatility-grid-info-slider-right {
+  margin-left: -6%;
+  margin-top: 25%;
+}
+
+.versatility-wrap .versatility-grid-info-slider-right a img:hover,
+.versatility-wrap .versatility-grid-info-slider-left a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.versatility-wrap .versatility-grid-info-slider-bottom {
+  margin-top: -45px;
+}
+
+.versatility-wrap .versatility-grid-info-slider-bottom img {
+  vertical-align: middle;
+}
+
+.versatility-wrap .versatility-grid-info-slider-bottom a:nth-child(2n) img:hover {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.versatility-wrap .versatility-grid-info-slider-bottom a:nth-child(3) img:hover {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.versatility-wrap .versatility-grid-info-slider-bottom img:sec {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.ideological {
+  background: url("../img/individuality/individuality-bg.png") center no-repeat;
+  background-size: cover;
+}
+
+.ideological-wrap {
+  width: 1140px;
+  margin: 0 auto;
+  padding-top: 144px;
+}
+
+.ideological-wrap .ideological-grid {
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "info info";
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.ideological-wrap .ideological-grid-info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: info;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ideological-wrap .ideological-grid-info-slider {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ideological-wrap .ideological-grid-info-slider-main {
+  width: 600px;
+  height: 433px;
+  background: url("../img/ideological/ideological-grid-slider-bg.png") center no-repeat;
+  background-size: cover;
+}
+
+.ideological-wrap .ideological-grid-info-slider-left {
+  margin-right: -3%;
+  margin-top: 25%;
+}
+
+.ideological-wrap .ideological-grid-info-slider-right {
+  margin-left: -3%;
+  margin-top: 25%;
+}
+
+.ideological-wrap .ideological-grid-info-slider-right a img:hover,
+.ideological-wrap .ideological-grid-info-slider-left a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.ideological-wrap .ideological-grid-info-slider-bottom {
+  margin-top: -45px;
+}
+
+.ideological-wrap .ideological-grid-info-slider-bottom img {
+  vertical-align: middle;
+}
+
+.ideological-wrap .ideological-grid-info-slider-bottom a:nth-child(2n) img:hover {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.ideological-wrap .ideological-grid-info-slider-bottom a:nth-child(3) img:hover {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.ideological-wrap .ideological-grid-info-slider-bottom img:sec {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.ideological-wrap .ideological-grid-info-right-text {
+  text-align: left;
+  margin-top: 25%;
+}
+
+.ideological-wrap .ideological-grid-info-right-text p:first-child {
+  font-family: 'Lifehack', sans-serif;
+  font-size: 36px;
+  margin: 0;
+  color: #7cbcf3;
+}
+
+.ideological-wrap .ideological-grid-info-right-text p:nth-child(2) {
+  font-family: 'Museo Sans 700', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  margin: 0;
+  color: #3e3e3e;
+}
+
+.ideological-wrap .ideological-grid-info-right-text p {
+  font-family: 'Museo Sans 500', sans-serif;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: #808080;
 }
 /*# sourceMappingURL=style.css.map */
