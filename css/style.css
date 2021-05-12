@@ -1616,9 +1616,10 @@ nav a {
 }
 
 .month-of-study {
-  margin-top: 40px;
-  background: url("../img/month-of-study/month-of-study-bg.png") center no-repeat;
-  background-size: auto;
+  margin-top: 0;
+  background: url("../img/month-of-study/month-of-study-bg.png") no-repeat;
+  background-size: auto cover;
+  background-position: 50% 20%;
 }
 
 .month-of-study-wrap {
@@ -1634,7 +1635,7 @@ nav a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin-top: -80px;
+  margin-top: 0;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "header" "info" "footer" "btn";
