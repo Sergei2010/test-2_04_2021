@@ -477,8 +477,8 @@ nav a {
 }
 
 .promotion .promotion-grid-header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  grid-row: 1;
+  grid-column: 1;
   grid-area: header;
 }
 
@@ -492,8 +492,8 @@ nav a {
 }
 
 .promotion .promotion-grid-tel {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  grid-row: 2;
+  grid-column: 1;
   grid-area: tel;
   width: 360px;
   height: 70px;
@@ -519,8 +519,8 @@ nav a {
 }
 
 .promotion .promotion-grid-name {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  grid-row: 2;
+  grid-column: 2;
   grid-area: name;
   width: 360px;
   height: 70px;
@@ -546,8 +546,8 @@ nav a {
 }
 
 .promotion .promotion-grid-btn {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
+  grid-row: 4;
+  grid-column: 1;
   grid-area: btn;
   width: 360px;
   height: 70px;
@@ -572,8 +572,8 @@ nav a {
 }
 
 .promotion .promotion-grid-footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  grid-row: 3;
+  grid-column: 1;
   grid-area: footer;
 }
 
@@ -591,8 +591,8 @@ nav a {
 }
 
 .promotion .promotion-grid-link {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
+  grid-row: 4;
+  grid-column: 2;
   grid-area: link;
 }
 
@@ -632,8 +632,8 @@ nav a {
 }
 
 .choose-wrap .choose-grid-header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  grid-row: 1;
+  grid-column: 1;
   grid-area: header;
   font-family: 'Lifehack', sans-serif;
   font-size: 65px;
@@ -647,8 +647,8 @@ nav a {
 
 .choose-wrap .choose-grid-filter {
   height: 110px;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  grid-row: 2;
+  grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: filter;
   display: -webkit-box;
@@ -678,8 +678,8 @@ nav a {
 }
 
 .choose-wrap .choose-grid-info {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  grid-row: 2;
+  grid-column: 1;
   grid-area: info;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -794,8 +794,8 @@ nav a {
 }
 
 .choose-wrap .choose-grid-btn {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
+  grid-row: 4;
+  grid-column: 1;
   grid-area: btn;
   margin-bottom: 120px;
 }
@@ -836,8 +836,8 @@ nav a {
 }
 
 .innovation-wrap .innovation-grid-header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  grid-row: 1;
+  grid-column: 1;
   grid-area: header;
   font-family: 'Lifehack', sans-serif;
   font-size: 65px;
@@ -855,8 +855,8 @@ nav a {
 }
 
 .innovation-wrap .innovation-grid-info {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  grid-row: 2;
+  grid-column: 1;
   grid-area: info;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -961,8 +961,8 @@ nav a {
 }
 
 .innovation-wrap .innovation-grid-btn {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
+  grid-row: 4;
+  grid-column: 1;
   grid-area: btn;
   margin-bottom: 120px;
 }
@@ -1003,8 +1003,8 @@ nav a {
 }
 
 .individuality-wrap .individuality-grid-info {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  grid-row: 2;
+  grid-column: 1;
   grid-area: info;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1135,8 +1135,8 @@ nav a {
 }
 
 .versatility-wrap .versatility-grid-info {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  grid-row: 2;
+  grid-column: 1;
   grid-area: info;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1266,8 +1266,8 @@ nav a {
 }
 
 .ideological-wrap .ideological-grid-info {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  grid-row: 2;
+  grid-column: 1;
   grid-area: info;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1398,8 +1398,8 @@ nav a {
 }
 
 .practicality-wrap .practicality-grid-info {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  grid-row: 2;
+  grid-column: 1;
   grid-area: info;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1525,8 +1525,8 @@ nav a {
 }
 
 .form .form-grid-email {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  grid-row: 1;
+  grid-column: 1;
   grid-area: email;
   width: 360px;
   height: 66px;
@@ -1552,8 +1552,8 @@ nav a {
 }
 
 .form .form-grid-btn {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
+  grid-row: 4;
+  grid-column: 1;
   grid-area: btn;
   width: 360px;
   height: 70px;
@@ -1578,8 +1578,8 @@ nav a {
 }
 
 .form .form-grid-rectangel {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  grid-row: 2;
+  grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: rectangel;
 }
@@ -1591,8 +1591,8 @@ nav a {
 }
 
 .form .form-grid-footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  grid-row: 3;
+  grid-column: 1;
   grid-area: footer;
 }
 
@@ -1604,8 +1604,8 @@ nav a {
 }
 
 .form .form-grid-link {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
+  grid-row: 4;
+  grid-column: 2;
   grid-area: link;
 }
 
@@ -1620,6 +1620,10 @@ nav a {
   background: url("../img/month-of-study/month-of-study-bg.png") no-repeat;
   background-size: auto cover;
   background-position: 50% 20%;
+  margin-top: 40px;
+  background: url("../img/month-of-study/month-of-study-bg.png") no-repeat;
+  background-size: auto cover;
+  background-position: 50% 30%;
 }
 
 .month-of-study-wrap {
@@ -1636,6 +1640,7 @@ nav a {
           align-items: center;
   text-align: center;
   margin-top: 0;
+  margin-top: -60px;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "header" "info" "footer" "btn";
@@ -1647,8 +1652,8 @@ nav a {
 }
 
 .month-of-study-wrap .month-of-study-grid-header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  grid-row: 1;
+  grid-column: 1;
   grid-area: header;
   font-family: 'Lifehack', sans-serif;
   font-size: 65px;
@@ -1666,8 +1671,8 @@ nav a {
 }
 
 .month-of-study-wrap .month-of-study-grid-info {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  grid-row: 2;
+  grid-column: 1;
   grid-area: info;
   margin-top: -50px;
 }
@@ -1725,8 +1730,8 @@ nav a {
 }
 
 .month-of-study-wrap .month-of-study-grid-footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  grid-row: 3;
+  grid-column: 1;
   grid-area: footer;
   text-align: center;
 }
@@ -1753,10 +1758,11 @@ nav a {
 }
 
 .month-of-study-wrap .month-of-study-grid-btn {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
+  grid-row: 4;
+  grid-column: 1;
   grid-area: btn;
   margin-top: -50px;
+  margin-bottom: -50px;
 }
 
 .month-of-study-wrap .month-of-study-grid-btn:hover {
@@ -1764,5 +1770,52 @@ nav a {
           transform: scale(1.05);
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
+}
+
+.awards {
+  margin-top: -120px;
+}
+
+.awards-container {
+  width: 1400px;
+  height: 1945px;
+  margin: 0 auto;
+  padding-top: 340px;
+  background: url("../img/awards/awards-bg.png") center no-repeat;
+  background-size: cover;
+}
+
+.awards-about-school {
+  padding-left: 110px;
+  padding-right: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.awards-certificate {
+  text-align: center;
+}
+
+.awards-certificate p,
+.awards-title {
+  font-family: 'Lifehack', sans-serif;
+  font-size: 50px;
+  color: #171717;
+}
+
+.awards-certificate p span {
+  color: #fa9402;
+}
+
+.awards-awards {
+  text-align: center;
+}
+
+.awards-awards p span {
+  color: #73b4ed;
 }
 /*# sourceMappingURL=style.css.map */
