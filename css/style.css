@@ -1617,8 +1617,9 @@ nav a {
 
 .month-of-study {
   margin-top: 40px;
-  background: url("../img/month-of-study/month-of-study-bg.png") center no-repeat;
-  background-size: auto;
+  background: url("../img/month-of-study/month-of-study-bg.png") no-repeat;
+  background-size: auto cover;
+  background-position: 50% 30%;
 }
 
 .month-of-study-wrap {
@@ -1634,7 +1635,7 @@ nav a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin-top: -80px;
+  margin-top: -60px;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "header" "info" "footer" "btn";
@@ -1756,6 +1757,7 @@ nav a {
   -ms-grid-column: 1;
   grid-area: btn;
   margin-top: -50px;
+  margin-bottom: -50px;
 }
 
 .month-of-study-wrap .month-of-study-grid-btn:hover {
@@ -1763,5 +1765,52 @@ nav a {
           transform: scale(1.05);
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
+}
+
+.awards {
+  margin-top: -120px;
+}
+
+.awards-container {
+  width: 1400px;
+  height: 1945px;
+  margin: 0 auto;
+  padding-top: 340px;
+  background: url("../img/awards/awards-bg.png") center no-repeat;
+  background-size: cover;
+}
+
+.awards-about-school {
+  padding-left: 110px;
+  padding-right: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.awards-certificate {
+  text-align: center;
+}
+
+.awards-certificate p,
+.awards-title {
+  font-family: 'Lifehack', sans-serif;
+  font-size: 50px;
+  color: #171717;
+}
+
+.awards-certificate p span {
+  color: #fa9402;
+}
+
+.awards-awards {
+  text-align: center;
+}
+
+.awards-awards p span {
+  color: #73b4ed;
 }
 /*# sourceMappingURL=style.css.map */
