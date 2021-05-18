@@ -479,6 +479,7 @@ nav a {
 .promotion .promotion-grid-header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: header;
 }
 
@@ -546,8 +547,8 @@ nav a {
 }
 
 .promotion .promotion-grid-btn {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: btn;
   width: 360px;
   height: 70px;
@@ -574,6 +575,7 @@ nav a {
 .promotion .promotion-grid-footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: footer;
 }
 
@@ -634,6 +636,7 @@ nav a {
 .choose-wrap .choose-grid-header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: header;
   font-family: 'Lifehack', sans-serif;
   font-size: 65px;
@@ -794,8 +797,8 @@ nav a {
 }
 
 .choose-wrap .choose-grid-btn {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: btn;
   margin-bottom: 120px;
 }
@@ -838,6 +841,7 @@ nav a {
 .innovation-wrap .innovation-grid-header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: header;
   font-family: 'Lifehack', sans-serif;
   font-size: 65px;
@@ -961,8 +965,8 @@ nav a {
 }
 
 .innovation-wrap .innovation-grid-btn {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: btn;
   margin-bottom: 120px;
 }
@@ -1552,8 +1556,8 @@ nav a {
 }
 
 .form .form-grid-btn {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: btn;
   width: 360px;
   height: 70px;
@@ -1593,6 +1597,7 @@ nav a {
 .form .form-grid-footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: footer;
 }
 
@@ -1649,6 +1654,7 @@ nav a {
 .month-of-study-wrap .month-of-study-grid-header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: header;
   font-family: 'Lifehack', sans-serif;
   font-size: 65px;
@@ -1727,6 +1733,7 @@ nav a {
 .month-of-study-wrap .month-of-study-grid-footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: footer;
   text-align: center;
 }
@@ -1753,8 +1760,8 @@ nav a {
 }
 
 .month-of-study-wrap .month-of-study-grid-btn {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: btn;
   margin-top: -50px;
   margin-bottom: -50px;
@@ -1825,7 +1832,7 @@ nav a {
   width: 1300px;
   height: 2000px;
   margin: 0 auto;
-  padding-top: 200px;
+  padding-top: 140px;
 }
 
 .reviews-header p {
@@ -1881,6 +1888,7 @@ nav a {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: list;
+  margin-top: -50px;
 }
 
 .reviews-slider-main-1 {
@@ -1916,6 +1924,24 @@ nav a {
   margin: auto;
 }
 
+.reviews-slider-main-1:hover,
+.reviews-slider-main-2:hover,
+.reviews-slider-main-3:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.reviews-slider-main-1 img:hover,
+.reviews-slider-main-2 img:hover,
+.reviews-slider-main-3 img:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
 .reviews-slider-list {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1937,8 +1963,26 @@ nav a {
   vertical-align: middle;
 }
 
-.reviews-btn {
-  text-align: center;
+.reviews-slider-switch-left a img:hover,
+.reviews-slider-switch-right a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.reviews-slider-list img:nth-child(1):hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.reviews-slider-list img:nth-child(4):hover {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
 .reviews-body {
@@ -1948,5 +1992,305 @@ nav a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: -70px;
+}
+
+.reviews-btn {
+  text-align: center;
+  margin-top: -75px;
+}
+
+.reviews-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.promotion2 {
+  margin-top: 60px;
+}
+
+.promotion2 .promotion2-grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header header" "tel name btn" "footer footer footer" "... link ...";
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 455px;
+  justify-items: center;
+  background: url("../img/promotion2/promotion2-bg.png") center no-repeat;
+  background-size: cover;
+  padding: 65px;
+}
+
+.promotion2 .promotion2-grid .promotion2-header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+}
+
+.promotion2 .promotion2-grid .promotion2-header > div {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  font-family: 'Museo Sans 500', sans-serif;
+  font-size: 20px;
+  color: #3e3e3e;
+}
+
+.promotion2 .promotion2-grid .promotion2-tel {
+  cursor: pointer;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: tel;
+  width: 360px;
+  height: 70px;
+  background: url("../img/promotion/promotion-input.png") center no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 24px;
+}
+
+.promotion2 .promotion2-grid .promotion2-tel > input {
+  font-family: 'Museo Sans 500', sans-serif;
+  font-size: 18px;
+  color: #9fa3a3;
+  border: none;
+  background: #f1f3f5;
+}
+
+.promotion2 .promotion2-grid .promotion2-tel > input:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.promotion2 .promotion2-grid .promotion2-name {
+  cursor: pointer;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: name;
+  width: 360px;
+  height: 70px;
+  background: url("../img/promotion/promotion-input-1.png") center no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 24px;
+}
+
+.promotion2 .promotion2-grid .promotion2-name > input {
+  font-family: 'Museo Sans 500', sans-serif;
+  font-size: 18px;
+  color: #9fa3a3;
+  background: #f1f3f5;
+  border: none;
+}
+
+.promotion2 .promotion2-grid .promotion2-name > input:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.promotion2 .promotion2-grid .promotion2-btn {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: btn;
+  width: 360px;
+  height: 70px;
+  text-align: center;
+  padding-top: 0;
+}
+
+.promotion2 .promotion2-grid .promotion2-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.promotion2 .promotion2-grid .promotion2-footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+}
+
+.promotion2 .promotion2-grid .promotion2-footer > div {
+  border-top: 2px solid #fcb755;
+  width: 50px;
+  margin: 40px auto;
+}
+
+.promotion2 .promotion2-grid .promotion2-footer > h4 {
+  font-family: 'Museo Sans 500', sans-serif;
+  font-size: 14px;
+  color: #616161;
+  text-align: center;
+}
+
+.promotion2 .promotion2-grid .promotion2-link {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: link;
+  margin-bottom: -87px;
+  margin-right: 29px;
+  padding: 29px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 0 #fcb755;
+          box-shadow: 0 0 0 0 #fcb755;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.promotion2 .promotion2-grid .promotion2-link:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 0 40px 4px #fcb755;
+          box-shadow: 0 0 40px 4px #fcb755;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.footer nav:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer nav:first-child a {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 92px;
+  height: 92px;
+  background: #384e77;
+  border-radius: 50%;
+}
+
+.footer nav:first-child a img {
+  margin: auto;
+}
+
+.footer-up {
+  margin: auto;
+  font-family: 'Museo Sans 700', sans-serif;
+  font-size: 18px;
+  color: #b2baca;
+}
+
+.footer nav:nth-child(2) {
+  background: #384e77;
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Museo Sans 300', sans-serif;
+  font-size: 22px;
+  color: #eceef2;
+}
+
+.footer ul span {
+  font-family: 'Museo Sans 300', sans-serif;
+  font-size: 11px;
+  color: #627494;
+  text-indent: 10px;
+}
+
+.footer ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+
+.footer ul li a, p {
+  margin: auto;
+}
+
+.footer-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-networks a img[alt*="vk"] {
+  width: 39%;
+  height: 24%;
+  margin: auto;
+}
+
+.footer-networks a img[alt*="ins"] {
+  width: 38%;
+  height: 38%;
+  margin: auto;
+}
+
+.footer a img[alt*="call"] {
+  margin: auto;
+}
+
+.footer a img[alt*="btn"] {
+  margin: auto;
+}
+
+.footer ul li a[name="vk"], a[name="ins"], a[name="call"] {
+  background: url("../img/footer/footer-circle.png") center no-repeat;
+  background-size: cover;
+  width: 56px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-tel {
+  display: block;
+  margin: auto;
+}
+
+.footer-tel p:first-child {
+  font-family: 'Museo Sans 300', sans-serif;
+  font-size: 11px;
+  color: #6d7d9b;
+  text-indent: 10px;
+}
+
+.footer ul li a[name="btn"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.footer ul li a[name="btn"] img {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
