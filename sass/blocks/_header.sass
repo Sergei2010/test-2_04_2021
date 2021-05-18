@@ -4,29 +4,41 @@
     align-items: center
     min-height: 100px
 
-.logo-info
+.header-info
+    display: flex
+    justify-content: start
+    align-items: center
+    flex-basis: 50%
+    
+.logo-img
+    margin: auto 0 auto 0
+
+.logo-info,
+    margin: auto 30px auto 0
+    +regular
     font-size: 22px
-    color: #c4cad4
-    line-height: .4
-    margin-left: 20px
+    color: #b0bbd1
 
-.city
-    margin-left: 20px    
+.logo-city
+    margin: auto 0 auto 30px
+    +light
+    font-size: 20px
+    color: #b0bbd1
+    padding-left: 30px
+    border-left: 1px solid #596a89
 
-.city p 
+
+.logo-city p
+    +light
     font-size: 11px
-    color: #7687a9
-    text-align: left
+    color: #7286aa
 
-.city nav
-    font-size: 22px
-
-nav ul
+.logo-city nav ul
     list-style: none
     margin: 0
     padding: 0
 
-nav a
+.logo-city nav a
     text-decoration: none
     color: #c4cad4
     outline: none
@@ -96,30 +108,45 @@ nav a
     opacity: 1
     transform: scale(1)
 
+.header-phone
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    flex-basis: 50%
+
 .phone-icon
     width: 60px
     height: 60px
-    margin-left: 20px
+    margin: auto 0 auto 0
+    display: flex
     justify-content: center
-    background: url("../img/header/circle.png"), url("../img/header/phone.png") center no-repeat
-    background-size: cover, auto
+    background: url("../img/header/circle.png") center no-repeat
+    background-size: cover
+
+.phone-icon a
+    display: flex
+
+.phone-icon a img
+    margin: auto
+    
+    
 
 .phone-num
-    margin-left: 20px
-    line-height: .4
+    +regular
+    font-size: 22px
+    color: #b0bbd1
+    margin: 0 30px auto 30px
 
-.phone-p1
-    text-indent: 7px
+.phone-num span
+    +light
     font-size: 11px
-    color: #7687a9
+    color: #7286aa
+    margin-left: 10px
 
-.phone-p2
-    color: #c4cad4
-
-.phone-call
+.phone-link
     width: 220px
     height: 60px
-    margin-left: 20px
+    margin: auto 30px
     display: flex
     background: url("../img/header/phone-btn.png") center no-repeat
     background-size: cover
