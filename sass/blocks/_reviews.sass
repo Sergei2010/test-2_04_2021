@@ -8,7 +8,7 @@
     width: 1300px
     height: 2000px
     margin: 0 auto
-    padding-top: 200px
+    padding-top: 140px
 
 .reviews-header p
     +bold
@@ -41,6 +41,7 @@
 
 .reviews-slider-list
     grid-area: list
+    margin-top: -50px
 
 .reviews-slider-main-1
     background: url("../img/reviews/reviews-slider-main-1.png") center no-repeat
@@ -67,6 +68,18 @@
 .reviews-slider-main-3 a
     margin: auto
 
+.reviews-slider-main-1:hover,
+.reviews-slider-main-2:hover,
+.reviews-slider-main-3:hover
+    transform: scale(1.02)
+    transition: .4s ease-in-out
+
+.reviews-slider-main-1 img:hover,
+.reviews-slider-main-2 img:hover,
+.reviews-slider-main-3 img:hover
+    transform: scale(1.08)
+    transition: .4s ease-in-out
+
 .reviews-slider-list
     display: inline-flex
     justify-content: center
@@ -80,13 +93,30 @@
 .reviews-slider-list a img
     vertical-align: middle
 
-.reviews-btn
-    text-align: center
+.reviews-slider-switch-left a img:hover,
+.reviews-slider-switch-right a img:hover
+    transform: scale(1.1)
+    transition: .4s ease-in-out
+
+.reviews-slider-list img:nth-child(1):hover
+    transform: scale(1.2)
+    transition: .4s ease-in-out
+
+.reviews-slider-list img:nth-child(4):hover
+    transform: scale(1.8)
+    transition: .4s ease-in-out
 
 .reviews-body
     display: flex
     justify-content: center
+    margin-top: -70px
 
-.reviews-body a img
+.reviews-btn
+    text-align: center
+    margin-top: -75px
+
+.reviews-btn:hover
+            transform: scale(1.05)
+            transition: .4s ease-in-out  
 
     
