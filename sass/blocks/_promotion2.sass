@@ -27,10 +27,11 @@
             cursor: pointer
             grid-area: tel
             width: 360px
-            height: 70px
+            height: 66px
             background: url("../img/promotion/promotion-input.png") center no-repeat
             background-size: cover
-            text-align: center
+            padding-left: 30px
+            text-align: left
             padding-top: 24px
 
         .promotion2-tel > input
@@ -49,10 +50,11 @@
             cursor: pointer
             grid-area: name
             width: 360px
-            height: 70px
+            height: 66px
             background: url("../img/promotion/promotion-input-1.png") center no-repeat
             background-size: cover
-            text-align: center
+            padding-left: 30px
+            text-align: left
             padding-top: 24px
 
         .promotion2-name > input
@@ -69,14 +71,9 @@
 
         .promotion2-btn
             grid-area: btn
-            width: 360px
-            height: 70px
-            text-align: center
-            padding-top: 0
-
-        .promotion2-btn:hover
-            transform: scale(1.05)
-            transition: .4s ease-in-out
+            @extend .button-size-5
+            @extend .button-blue
+            margin: 0
 
         .promotion2-footer
             grid-area: footer

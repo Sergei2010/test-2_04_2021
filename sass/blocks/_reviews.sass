@@ -8,7 +8,7 @@
     width: 1300px
     height: 2000px
     margin: 0 auto
-    padding-top: 140px
+    padding-top: 170px
 
 .reviews-header p
     +bold
@@ -112,11 +112,8 @@
     margin-top: -70px
 
 .reviews-btn
-    text-align: center
-    margin-top: -75px
-
-.reviews-btn:hover
-            transform: scale(1.05)
-            transition: .4s ease-in-out  
+    @extend .button-size-2
+    @extend .button-orange
+    margin-left: calc( 50% - 160px )
 
     

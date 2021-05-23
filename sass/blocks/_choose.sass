@@ -1,7 +1,7 @@
 .choose
     background: url("../img/choose/choose-bg.png") no-repeat
     background-size: cover
-    background-position: 54% 50% 
+    background-position: 54% 50%
 
 .choose-wrap
     width: 1140px
@@ -122,8 +122,6 @@
 
         &-btn
             grid-area: btn
-            margin-bottom: 120px
-
-        &-btn:hover
-            transform: scale(1.05)
-            transition: .4s ease-in-out    
+            @extend .button-size-2
+            @extend .button-orange
+            margin: 0 auto 90px

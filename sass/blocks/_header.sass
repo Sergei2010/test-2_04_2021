@@ -13,7 +13,7 @@
 .logo-img
     margin: auto 0 auto 0
 
-.logo-info,
+.logo-info
     margin: auto 30px auto 0
     +regular
     font-size: 22px
@@ -129,8 +129,6 @@
 .phone-icon a img
     margin: auto
     
-    
-
 .phone-num
     +regular
     font-size: 22px
@@ -143,26 +141,7 @@
     color: #7286aa
     margin-left: 10px
 
-.phone-link
-    width: 220px
-    height: 60px
+.header-phone-btn
+    @extend .button-size-1
+    @extend .button-transparent
     margin: auto 30px
-    display: flex
-    background: url("../img/header/phone-btn.png") center no-repeat
-    background-size: cover
-    justify-content: center
-
-.phone-call:hover
-    transform: scale(1.05)
-    transition: .4s ease-in-out  
-
-.phone-call a
-    color: #c4cad4
-    text-decoration: none
-    align-self: center
-
-
-
-
-
-
