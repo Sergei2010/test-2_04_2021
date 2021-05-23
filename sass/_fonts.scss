@@ -39,18 +39,18 @@ font-style: normal;
     font-style: normal;
     }
 
-@mixin bold {
+@mixin bold() {
     font-family: 'Lifehack', sans-serif;
 }
 
-@mixin light {
+@mixin light() {
     font-family: 'Museo Sans 300', sans-serif;
 }
 
-@mixin regular {
+@mixin regular() {
     font-family: 'Museo Sans 500', sans-serif;
 }
 
-@mixin semi-bold {
+@mixin semi-bold() {
     font-family: 'Museo Sans 700', sans-serif;
 }
